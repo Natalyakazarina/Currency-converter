@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Currency converter</h2>
+    <form action="#">
+        <label>Amount <input type="text" class="Amount"></label>
+        <label>from <select class="current-currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RUB">RUB</option>
+                <option value="BYN">BYN</option>
+            </select></label>
+
+        <label>to <select class="to-convert-into-currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RUB">RUB</option>
+                <option value="BYN">BYN</option>
+            </select></label>
+        <br>
+        <p>*at actual rates of exchange of the National bank of the Republic of Belarus effective on the date of March 19, 2020, 1 p.m. </p>
+        <br>
+        <button class="convert-btn">convert</button>
+    </form>
+    <div>
+        <pre>
+        <h2>result of conversion</h2>
+        <span class="result"></span>
+         </pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
